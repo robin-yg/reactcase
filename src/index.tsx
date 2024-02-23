@@ -1,15 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './style/index.css';
 import reportWebVitals from './reportWebVitals';
+import AgeBarChart from './components/AgeBarChart';
+import AverageShoeSize from './components/AverageShoeSize';
+import FamilyTree from './components/FamilyTree';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+
+    <div className='container'>
+      <div className='box'>
+        <div>
+          <h2>Family Tree</h2>
+          <FamilyTree />
+        </div>
+        <div className='AgeBarChart'>
+          <h2>Family Age Bar Chart</h2>
+          <AgeBarChart />
+        </div>
+        <div>
+          <h2>Average shoe size per gender</h2>
+          <AverageShoeSize />
+        </div>
+      </div>
+    </div>
+
   </React.StrictMode>
 );
 
