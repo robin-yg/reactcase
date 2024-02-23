@@ -13,7 +13,7 @@ const convertToTreeNodes = (person: any): RawNodeDatum => {
 };
 
 const FamilyTree: React.FC<HomeProps> = () => {
-  const [tree, setTree] = useState<RawNodeDatum | RawNodeDatum[]>({
+  const [tree] = useState<RawNodeDatum | RawNodeDatum[]>({
     name: henning.Name,
     children: henning.Children.map(convertToTreeNodes),
   });
