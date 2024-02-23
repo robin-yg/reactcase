@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const lars = { Name: "Lars", Age: 20, ShoeSize: 46, Gender: "M", Children: [] };
 export const iben = { Name: "Iben", Age: 26, ShoeSize: 38, Gender: "F", Children: [] };
 export const bente = {

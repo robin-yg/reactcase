@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Tree from 'react-d3-tree';
 import { RawNodeDatum } from 'react-d3-tree';
-import { familyData, henning } from './data';
+import {henning } from './data';
 
 interface HomeProps { }
 
